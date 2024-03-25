@@ -8,7 +8,7 @@ public class SymbolRemovePerformanceApp {
 		int N_SYMBOLS = 100;
 		String testString = generateRandomString(N_SYMBOLS);
 		System.out.println("Generated String: " + testString);
-	    int nRuns = 10;
+	    int nRuns = 1000;
         
 	    SymbolsRemovePerformance performanceTestCharArray = new SymbolsRemovePerformance("Test for SymbolsRemoveCharArray implementation", nRuns, new SymbolsRemoveCharArray(), new String[]{testString});
         performanceTestCharArray.run();
